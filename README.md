@@ -1,5 +1,5 @@
 # autoaudio
-A []-based project for automatic volume adjustment based on audio loudness for TVs.
+An automatic volume adjustment system for TVs using Arduino.
 
 # to do
 - understand all this shiz 🐱 and how it works
@@ -13,6 +13,9 @@ A []-based project for automatic volume adjustment based on audio loudness for T
 6. Momentary button/switch (later)
 
 **total**: 45.50$
+
+## later
+1. momentary button/switch for customization (low/med/high)
 
 # just some notes
 learn abt above parts (look at ipad)
