@@ -10,6 +10,10 @@ A []-based project for automatic volume adjustment based on audio loudness for T
 3. Mic Sensor
 4. Breadboard
 5. Wiring
+6. Momentary button/switch
+7. Resistors
+8. (already have usb)
+9. leds (not apart of this idea but i just wanna buy them)
 
 # just some notes
 learn abt above parts (look at ipad)
