@@ -5,14 +5,14 @@ A []-based project for automatic volume adjustment based on audio loudness for T
 - understand all this shiz 🐱 and how it works
 
 # to purchase
-1. [Arduino](https://www.amazon.com/DORHEA-ATMEGA328P-Module-Micro-Controller-Compatible/dp/B08PZ36KBX/ref=sr_1_5?crid=FVI8JS7YDBGM&keywords=arduino%2Bnano%2Bv3&qid=1690081625&sprefix=arduino%2Bnano%2Bv3%2Caps%2C167&sr=8-5&th=1)
-2. [IR Transmitter / Reciever](https://www.amazon.com/Emitter-Receiver-VS1838B-Infrared-Raspberry/dp/B07TLBJR5J/ref=sr_1_5?keywords=ir%2Btransmitter%2Band%2Breceiver&qid=1690080988&sprefix=ir%2Btransmit%2Caps%2C146&sr=8-5&th=1)
-3. [Mic Sensor](https://www.amazon.com/Comidox-Sensitivity-Microphone-Detection-Arduino/dp/B07J6N734S/ref=sr_1_6?crid=SC0QAPQE5KG7&keywords=mic+sensor&qid=1690081002&sprefix=mic+sensor%2Caps%2C140&sr=8-6)
-4. [Small Breadboard](https://www.amazon.com/HiLetgo-SYB-170-Breadboard-Colorful-Plates/dp/B071KCZZ4K/ref=sr_1_8?keywords=breadboard+small&qid=1690082823&sr=8-8)
-5. [Wiring/Resistors](https://www.amazon.com/EL-CK-002-Electronic-Breadboard-Capacitor-Potentiometer/dp/B01ERP6WL4/ref=sr_1_3?crid=1YOIUIVXA164Q&keywords=resistors%2Barduino&qid=1690081448&sprefix=resistors%2Barduino%2Caps%2C167&sr=8-3&th=1)
+1. [Arduino w/usb - 13$](https://www.amazon.com/DORHEA-ATMEGA328P-Module-Micro-Controller-Compatible/dp/B08PZ36KBX/ref=sr_1_5?crid=FVI8JS7YDBGM&keywords=arduino%2Bnano%2Bv3&qid=1690081625&sprefix=arduino%2Bnano%2Bv3%2Caps%2C167&sr=8-5&th=1)
+2. [IR Transmitter / Reciever - 7$](https://www.amazon.com/Emitter-Receiver-VS1838B-Infrared-Raspberry/dp/B07TLBJR5J/ref=sr_1_5?keywords=ir%2Btransmitter%2Band%2Breceiver&qid=1690080988&sprefix=ir%2Btransmit%2Caps%2C146&sr=8-5&th=1)
+3. [Mic Sensor - 7$](https://www.amazon.com/Comidox-Sensitivity-Microphone-Detection-Arduino/dp/B07J6N734S/ref=sr_1_6?crid=SC0QAPQE5KG7&keywords=mic+sensor&qid=1690081002&sprefix=mic+sensor%2Caps%2C140&sr=8-6)
+4. [Small Breadboard - 6.50$](https://www.amazon.com/HiLetgo-SYB-170-Breadboard-Colorful-Plates/dp/B071KCZZ4K/ref=sr_1_8?keywords=breadboard+small&qid=1690082823&sr=8-8)
+5. [Wiring/Resistors (has leds) - 12$](https://www.amazon.com/EL-CK-002-Electronic-Breadboard-Capacitor-Potentiometer/dp/B01ERP6WL4/ref=sr_1_3?crid=1YOIUIVXA164Q&keywords=resistors%2Barduino&qid=1690081448&sprefix=resistors%2Barduino%2Caps%2C167&sr=8-3&th=1)
 6. Momentary button/switch (later)
-8. (already have usb)
-9. leds (not apart of this idea but i just wanna buy them)
+
+**total**: 45.50$
 
 # just some notes
 learn abt above parts (look at ipad)
