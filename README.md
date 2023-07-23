@@ -9,6 +9,7 @@ A []-based project for automatic volume adjustment based on audio loudness for T
 2. IR Transmitter / Reciever
 3. Mic Sensor
 4. Breadboard
+5. Wiring
 
 # just some notes
 learn abt above parts (look at ipad)
