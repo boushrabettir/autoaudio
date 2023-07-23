@@ -10,9 +10,9 @@ An automatic volume adjustment system for TVs using Arduino.
 3. [Mic Sensor - 7$](https://www.amazon.com/Comidox-Sensitivity-Microphone-Detection-Arduino/dp/B07J6N734S/ref=sr_1_6?crid=SC0QAPQE5KG7&keywords=mic+sensor&qid=1690081002&sprefix=mic+sensor%2Caps%2C140&sr=8-6)
 4. [Small Breadboard - 6.50$](https://www.amazon.com/HiLetgo-SYB-170-Breadboard-Colorful-Plates/dp/B071KCZZ4K/ref=sr_1_8?keywords=breadboard+small&qid=1690082823&sr=8-8)
 5. [Wiring/Resistors (has leds) - 12$](https://www.amazon.com/EL-CK-002-Electronic-Breadboard-Capacitor-Potentiometer/dp/B01ERP6WL4/ref=sr_1_3?crid=1YOIUIVXA164Q&keywords=resistors%2Barduino&qid=1690081448&sprefix=resistors%2Barduino%2Caps%2C167&sr=8-3&th=1)
-6. Momentary button/switch (later)
+6. [Momentary button/switch](https://www.amazon.com/Momentary-Assortment-Pushbutton-Breadboard-Electronic/dp/B09R42NFGN/ref=sr_1_4?keywords=momentary%2Bpush%2Bbutton%2Bswitch%2Barduino&qid=1690094074&s=industrial&sprefix=momentary%2Bpush%2Bbutton%2Bswitch%2Bard%2Cindustrial%2C123&sr=1-4&th=1)
 
-**total**: 45.50$
+**total**: 50.50$
 
 ## later
 1. momentary button/switch for customization (low/med/high)
