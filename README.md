@@ -23,5 +23,7 @@ instead i can place the mic sensor below the speakers
 
 would have to reduce outside noise as well
 
+if manually changed, to mute how would that work
+
 later down the line have different thresholds for both my parents, values change dependent
 
