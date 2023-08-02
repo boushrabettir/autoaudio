@@ -1,9 +1,4 @@
-#include <IRremote.h>
-
-#define IR_TRANSMITTER 9
-
-// For debugging purposes
-int LED_PIN = 11;
+#include <IRremote.hpp>
 
 // Sensor pin (A0-A7) to get real values from analog pins rather than the
 // binary values from the digital pins
@@ -14,13 +9,15 @@ const int MAX_VOLUME_LENGTH = 5;
 int VOLUME_VALUES[MAX_VOLUME_LENGTH] = {0, 0, 0, 0, 0};
 
 // Holds thresholds for volume (volumes bound to change)
-int LOUD_THRESHOLD = 400;
-int LOW_THRESHOLD = 200;
+int LOUD_THRESHOLD = 600;
+int LOW_THRESHOLD = 300;
+
+// Pin mode for IR Transmitter
+int IR_TRANSMITTER = 9;
 
 void setup() {
+  // Set up connection with IR Transmitter
   IrSender.begin(IR_TRANSMITTER);
-  pinMode(LED_PIN, OUTPUT);
-  digitalWrite(LED_PIN, LOW);
   Serial.begin(9600);
 }
 
@@ -31,33 +28,37 @@ void loop() {
   Serial.println(sensor_value);
 
   // Record volume values
-  recordVolumeValue(sensor_value);
+  record_volume_values(sensor_value);
 
-  if (volumeArrayFull()) {
-    int determine_value = determineThreshold();
-
+  if (is_volume_array_full()) {
+    int determine_value = determine_threshold();
+    Serial.println("DETERMINE VOLUME!");
     switch (determine_value) {
       case 1:
         // Majority of volumes are above high threshold, decrease volume
-        decreaseVolume();
+        decrease_volume();
         break;
       case 0:
         // Majority of volumes are below low threshold, increase volume
-        increaseVolume();
+        increase_volume();
         break;
       case -1:
         // Majority of volumes are between thresholds, no action is necessary
+        reset_list();
         break;
     }
   }
 }
 
-void recordVolumeValue(int volume) {
+
+void record_volume_values(int volume) {
   static int index = 0;
   VOLUME_VALUES[index] = volume;
   index = (index + 1) % MAX_VOLUME_LENGTH;
 
-bool volumeArrayFull() {
+} 
+
+bool is_volume_array_full() {
   for (int i = 0; i < MAX_VOLUME_LENGTH; i++) {
     if (VOLUME_VALUES[i] == 0) {
       return false;
@@ -66,7 +67,7 @@ bool volumeArrayFull() {
   return true;
 }
 
-int determineThreshold() {
+int determine_threshold() {
   int low_counter = 0;
   int high_counter = 0;
   int middle_counter = 0;
@@ -96,24 +97,29 @@ int determineThreshold() {
   }
 }
 
-// Debugging
-void turn_on_led() {
-  digitalWrite(LED_PIN, HIGH);
-}
-
-// Debugging
-void turn_off_led() {
-  digitalWrite(LED_PIN, LOW);
-}
-
-// Hex values are temp values. 
-
-void increaseVolume() {
-  IrSender.sendNEC("FFFFFFF", 32);
+void increase_volume() {
+  Serial.println("INCREASE VOLUME!");
+  for (int i=0; i < 5; i++) {
+    IrSender.sendNEC("F8070707", 32);
+  }
+  reset_list();
   delay(1000);
 }
 
-void decreaseVolume() {
-  IrSender.sendNEC("FFFFFFF", 32);
+void decrease_volume() {
+  Serial.println("DECREASE VOLUME!");
+  for (int i=0; i < 5; i++) {
+    IrSender.sendNEC("F40B0707", 32);
+  }
+  reset_list();
   delay(1000);
 }
+
+void reset_list() {
+  for (int i = 0; i < MAX_VOLUME_LENGTH; i++) {
+    VOLUME_VALUES[i] = 0;
+  }
+}
+
+
+
